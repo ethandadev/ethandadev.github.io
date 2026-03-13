@@ -1,0 +1,596 @@
+<!doctype html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>课程中心 - 编程学院</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <!-- 导航栏 -->
+        <nav class="navbar">
+            <div class="container nav-container">
+                <a href="index.html" class="logo">💻 编程学院</a>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="nav-link">首页</a></li>
+                    <li>
+                        <a href="courses.html" class="nav-link active"
+                            >课程中心</a
+                        >
+                    </li>
+                    <li>
+                        <a href="dashboard.html" class="nav-link">我的课程</a>
+                    </li>
+                    <li><a href="about.html" class="nav-link">关于我们</a></li>
+                </ul>
+                <button class="mobile-menu-btn" aria-label="打开菜单">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+
+        <!-- 页面头部 -->
+        <section class="page-header">
+            <div class="container">
+                <h1>课程中心</h1>
+                <p>探索我们的精品课程，找到适合你的学习路径</p>
+            </div>
+        </section>
+
+        <!-- 筛选栏 -->
+        <div class="filter-bar">
+            <div class="container">
+                <input
+                    type="text"
+                    class="search-input"
+                    placeholder="搜索课程..."
+                />
+                <select class="filter-select" id="categoryFilter">
+                    <option value="all">全部分类</option>
+                    <option value="编程语言">编程语言</option>
+                    <option value="前端开发">前端开发</option>
+                    <option value="后端开发">后端开发</option>
+                    <option value="数据科学">数据科学</option>
+                    <option value="人工智能">人工智能</option>
+                </select>
+                <select class="filter-select" id="levelFilter">
+                    <option value="all">全部难度</option>
+                    <option value="入门">入门</option>
+                    <option value="中级">中级</option>
+                    <option value="高级">高级</option>
+                </select>
+                <select class="filter-select" id="sortFilter">
+                    <option value="default">默认排序</option>
+                    <option value="newest">最新发布</option>
+                    <option value="price-asc">价格从低到高</option>
+                    <option value="price-desc">价格从高到低</option>
+                    <option value="rating">好评优先</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- 课程列表 -->
+        <section class="section">
+            <div class="container">
+                <div class="courses-grid">
+                    <!-- 课程卡片 1: Python 编程入门 -->
+                    <div
+                        class="course-card"
+                        data-category="编程语言"
+                        data-level="入门"
+                        data-price="199"
+                    >
+                        <div
+                            class="card-header"
+                            style="
+                                background: linear-gradient(
+                                    135deg,
+                                    #3776ab,
+                                    #ffd43b
+                                );
+                            "
+                        >
+                            <span class="course-icon">🐍</span>
+                            <span class="difficulty-tag tag-beginner"
+                                >入门</span
+                            >
+                        </div>
+                        <div class="card-body">
+                            <h3 class="course-title">Python 编程入门</h3>
+                            <p class="course-instructor">👨‍🏫 张明</p>
+                            <div class="course-rating">
+                                <span class="stars">⭐⭐⭐⭐⭐</span>
+                                <span class="rating-number">4.8</span>
+                            </div>
+                            <p class="course-enrolled">🎓 3,256人已报名</p>
+                            <div class="card-footer">
+                                <span class="course-price">¥199</span>
+                                <button class="btn btn-enroll">立即报名</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 课程卡片 2: Java 高级开发 -->
+                    <div
+                        class="course-card"
+                        data-category="编程语言"
+                        data-level="高级"
+                        data-price="399"
+                    >
+                        <div
+                            class="card-header"
+                            style="
+                                background: linear-gradient(
+                                    135deg,
+                                    #e76f00,
+                                    #5382a1
+                                );
+                            "
+                        >
+                            <span class="course-icon">☕</span>
+                            <span class="difficulty-tag tag-advanced"
+                                >高级</span
+                            >
+                        </div>
+                        <div class="card-body">
+                            <h3 class="course-title">Java 高级开发</h3>
+                            <p class="course-instructor">👨‍🏫 李华</p>
+                            <div class="course-rating">
+                                <span class="stars">⭐⭐⭐⭐⭐</span>
+                                <span class="rating-number">4.9</span>
+                            </div>
+                            <p class="course-enrolled">🎓 2,108人已报名</p>
+                            <div class="card-footer">
+                                <span class="course-price">¥399</span>
+                                <button class="btn btn-enroll">立即报名</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 课程卡片 3: 前端开发实战 -->
+                    <div
+                        class="course-card"
+                        data-category="前端开发"
+                        data-level="中级"
+                        data-price="299"
+                    >
+                        <div
+                            class="card-header"
+                            style="
+                                background: linear-gradient(
+                                    135deg,
+                                    #e44d26,
+                                    #f7df1e
+                                );
+                            "
+                        >
+                            <span class="course-icon">🌐</span>
+                            <span class="difficulty-tag tag-intermediate"
+                                >中级</span
+                            >
+                        </div>
+                        <div class="card-body">
+                            <h3 class="course-title">前端开发实战</h3>
+                            <p class="course-instructor">👨‍🏫 王芳</p>
+                            <div class="course-rating">
+                                <span class="stars">⭐⭐⭐⭐⭐</span>
+                                <span class="rating-number">4.7</span>
+                            </div>
+                            <p class="course-enrolled">🎓 4,521人已报名</p>
+                            <div class="card-footer">
+                                <span class="course-price">¥299</span>
+                                <button class="btn btn-enroll">立即报名</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 课程卡片 4: 数据结构与算法 -->
+                    <div
+                        class="course-card"
+                        data-category="后端开发"
+                        data-level="中级"
+                        data-price="349"
+                    >
+                        <div
+                            class="card-header"
+                            style="
+                                background: linear-gradient(
+                                    135deg,
+                                    #6a1b9a,
+                                    #00bcd4
+                                );
+                            "
+                        >
+                            <span class="course-icon">🧮</span>
+                            <span class="difficulty-tag tag-intermediate"
+                                >中级</span
+                            >
+                        </div>
+                        <div class="card-body">
+                            <h3 class="course-title">数据结构与算法</h3>
+                            <p class="course-instructor">👨‍🏫 陈伟</p>
+                            <div class="course-rating">
+                                <span class="stars">⭐⭐⭐⭐⭐</span>
+                                <span class="rating-number">4.9</span>
+                            </div>
+                            <p class="course-enrolled">🎓 1,893人已报名</p>
+                            <div class="card-footer">
+                                <span class="course-price">¥349</span>
+                                <button class="btn btn-enroll">立即报名</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 课程卡片 5: 人工智能基础 -->
+                    <div
+                        class="course-card"
+                        data-category="人工智能"
+                        data-level="高级"
+                        data-price="499"
+                    >
+                        <div
+                            class="card-header"
+                            style="
+                                background: linear-gradient(
+                                    135deg,
+                                    #ff6f00,
+                                    #ff1744
+                                );
+                            "
+                        >
+                            <span class="course-icon">🤖</span>
+                            <span class="difficulty-tag tag-advanced"
+                                >高级</span
+                            >
+                        </div>
+                        <div class="card-body">
+                            <h3 class="course-title">人工智能基础</h3>
+                            <p class="course-instructor">👨‍🏫 刘洋</p>
+                            <div class="course-rating">
+                                <span class="stars">⭐⭐⭐⭐⭐</span>
+                                <span class="rating-number">4.8</span>
+                            </div>
+                            <p class="course-enrolled">🎓 2,756人已报名</p>
+                            <div class="card-footer">
+                                <span class="course-price">¥499</span>
+                                <button class="btn btn-enroll">立即报名</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 课程卡片 6: Web 全栈开发 -->
+                    <div
+                        class="course-card"
+                        data-category="前端开发"
+                        data-level="高级"
+                        data-price="599"
+                    >
+                        <div
+                            class="card-header"
+                            style="
+                                background: linear-gradient(
+                                    135deg,
+                                    #1b5e20,
+                                    #43a047
+                                );
+                            "
+                        >
+                            <span class="course-icon">🚀</span>
+                            <span class="difficulty-tag tag-advanced"
+                                >高级</span
+                            >
+                        </div>
+                        <div class="card-body">
+                            <h3 class="course-title">Web 全栈开发</h3>
+                            <p class="course-instructor">👨‍🏫 赵磊</p>
+                            <div class="course-rating">
+                                <span class="stars">⭐⭐⭐⭐⭐</span>
+                                <span class="rating-number">4.6</span>
+                            </div>
+                            <p class="course-enrolled">🎓 1,432人已报名</p>
+                            <div class="card-footer">
+                                <span class="course-price">¥599</span>
+                                <button class="btn btn-enroll">立即报名</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 课程卡片 7: React 框架精讲 -->
+                    <div
+                        class="course-card"
+                        data-category="前端开发"
+                        data-level="中级"
+                        data-price="349"
+                    >
+                        <div
+                            class="card-header"
+                            style="
+                                background: linear-gradient(
+                                    135deg,
+                                    #61dafb,
+                                    #282c34
+                                );
+                            "
+                        >
+                            <span class="course-icon">⚛️</span>
+                            <span class="difficulty-tag tag-intermediate"
+                                >中级</span
+                            >
+                        </div>
+                        <div class="card-body">
+                            <h3 class="course-title">React 框架精讲</h3>
+                            <p class="course-instructor">👨‍🏫 孙丽</p>
+                            <div class="course-rating">
+                                <span class="stars">⭐⭐⭐⭐⭐</span>
+                                <span class="rating-number">4.7</span>
+                            </div>
+                            <p class="course-enrolled">🎓 2,341人已报名</p>
+                            <div class="card-footer">
+                                <span class="course-price">¥349</span>
+                                <button class="btn btn-enroll">立即报名</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 课程卡片 8: 数据分析与可视化 -->
+                    <div
+                        class="course-card"
+                        data-category="数据科学"
+                        data-level="中级"
+                        data-price="299"
+                    >
+                        <div
+                            class="card-header"
+                            style="
+                                background: linear-gradient(
+                                    135deg,
+                                    #4caf50,
+                                    #2196f3
+                                );
+                            "
+                        >
+                            <span class="course-icon">📊</span>
+                            <span class="difficulty-tag tag-intermediate"
+                                >中级</span
+                            >
+                        </div>
+                        <div class="card-body">
+                            <h3 class="course-title">数据分析与可视化</h3>
+                            <p class="course-instructor">👨‍🏫 周杰</p>
+                            <div class="course-rating">
+                                <span class="stars">⭐⭐⭐⭐⭐</span>
+                                <span class="rating-number">4.8</span>
+                            </div>
+                            <p class="course-enrolled">🎓 3,102人已报名</p>
+                            <div class="card-footer">
+                                <span class="course-price">¥299</span>
+                                <button class="btn btn-enroll">立即报名</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 课程卡片 9: Go 语言实战 -->
+                    <div
+                        class="course-card"
+                        data-category="编程语言"
+                        data-level="中级"
+                        data-price="349"
+                    >
+                        <div
+                            class="card-header"
+                            style="
+                                background: linear-gradient(
+                                    135deg,
+                                    #00add8,
+                                    #ffffff
+                                );
+                            "
+                        >
+                            <span class="course-icon">🔷</span>
+                            <span class="difficulty-tag tag-intermediate"
+                                >中级</span
+                            >
+                        </div>
+                        <div class="card-body">
+                            <h3 class="course-title">Go 语言实战</h3>
+                            <p class="course-instructor">👨‍🏫 吴强</p>
+                            <div class="course-rating">
+                                <span class="stars">⭐⭐⭐⭐⭐</span>
+                                <span class="rating-number">4.7</span>
+                            </div>
+                            <p class="course-enrolled">🎓 1,567人已报名</p>
+                            <div class="card-footer">
+                                <span class="course-price">¥349</span>
+                                <button class="btn btn-enroll">立即报名</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 课程卡片 10: 机器学习进阶 -->
+                    <div
+                        class="course-card"
+                        data-category="人工智能"
+                        data-level="高级"
+                        data-price="599"
+                    >
+                        <div
+                            class="card-header"
+                            style="
+                                background: linear-gradient(
+                                    135deg,
+                                    #ff5722,
+                                    #9c27b0
+                                );
+                            "
+                        >
+                            <span class="course-icon">🧠</span>
+                            <span class="difficulty-tag tag-advanced"
+                                >高级</span
+                            >
+                        </div>
+                        <div class="card-body">
+                            <h3 class="course-title">机器学习进阶</h3>
+                            <p class="course-instructor">👨‍🏫 郑敏</p>
+                            <div class="course-rating">
+                                <span class="stars">⭐⭐⭐⭐⭐</span>
+                                <span class="rating-number">4.9</span>
+                            </div>
+                            <p class="course-enrolled">🎓 1,234人已报名</p>
+                            <div class="card-footer">
+                                <span class="course-price">¥599</span>
+                                <button class="btn btn-enroll">立即报名</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 课程卡片 11: C++ 系统编程 -->
+                    <div
+                        class="course-card"
+                        data-category="编程语言"
+                        data-level="高级"
+                        data-price="399"
+                    >
+                        <div
+                            class="card-header"
+                            style="
+                                background: linear-gradient(
+                                    135deg,
+                                    #00599c,
+                                    #004482
+                                );
+                            "
+                        >
+                            <span class="course-icon">⚙️</span>
+                            <span class="difficulty-tag tag-advanced"
+                                >高级</span
+                            >
+                        </div>
+                        <div class="card-body">
+                            <h3 class="course-title">C++ 系统编程</h3>
+                            <p class="course-instructor">👨‍🏫 黄磊</p>
+                            <div class="course-rating">
+                                <span class="stars">⭐⭐⭐⭐⭐</span>
+                                <span class="rating-number">4.8</span>
+                            </div>
+                            <p class="course-enrolled">🎓 987人已报名</p>
+                            <div class="card-footer">
+                                <span class="course-price">¥399</span>
+                                <button class="btn btn-enroll">立即报名</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 课程卡片 12: SQL 数据库入门 -->
+                    <div
+                        class="course-card"
+                        data-category="数据科学"
+                        data-level="入门"
+                        data-price="149"
+                    >
+                        <div
+                            class="card-header"
+                            style="
+                                background: linear-gradient(
+                                    135deg,
+                                    #336791,
+                                    #f29111
+                                );
+                            "
+                        >
+                            <span class="course-icon">🗄️</span>
+                            <span class="difficulty-tag tag-beginner"
+                                >入门</span
+                            >
+                        </div>
+                        <div class="card-body">
+                            <h3 class="course-title">SQL 数据库入门</h3>
+                            <p class="course-instructor">👨‍🏫 林涛</p>
+                            <div class="course-rating">
+                                <span class="stars">⭐⭐⭐⭐⭐</span>
+                                <span class="rating-number">4.6</span>
+                            </div>
+                            <p class="course-enrolled">🎓 5,678人已报名</p>
+                            <div class="card-footer">
+                                <span class="course-price">¥149</span>
+                                <button class="btn btn-enroll">立即报名</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 分页 -->
+                <div class="pagination">
+                    <button class="page-btn" disabled>上一页</button>
+                    <button class="page-btn active">1</button>
+                    <button class="page-btn">2</button>
+                    <button class="page-btn">3</button>
+                    <button class="page-btn">下一页</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 页脚 -->
+        <footer class="footer">
+            <div class="container footer-grid">
+                <div class="footer-col">
+                    <h4 class="footer-heading">💻 编程学院</h4>
+                    <p class="footer-about">
+                        编程学院是国内领先的在线编程教育平台，致力于为学员提供高质量、体系化的编程课程，帮助每一位学习者实现技术梦想。
+                    </p>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-heading">快速链接</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="courses.html">课程中心</a></li>
+                        <li><a href="#">学习路径</a></li>
+                        <li><a href="#">师资团队</a></li>
+                        <li><a href="#">常见问题</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-heading">联系我们</h4>
+                    <ul class="footer-contact">
+                        <li>📧 邮箱：contact@codingacademy.cn</li>
+                        <li>📞 电话：400-888-9999</li>
+                        <li>📍 地址：北京市海淀区中关村科技园</li>
+                        <li>🕐 工作时间：周一至周五 9:00 - 18:00</li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-heading">关注我们</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link" title="微信">💬</a>
+                        <a href="#" class="social-link" title="微博">📢</a>
+                        <a href="#" class="social-link" title="抖音">🎵</a>
+                        <a href="#" class="social-link" title="哔哩哔哩">📺</a>
+                    </div>
+                    <p class="footer-newsletter-label">订阅我们的最新动态</p>
+                    <div class="newsletter-form">
+                        <input
+                            type="email"
+                            placeholder="请输入您的邮箱"
+                            class="newsletter-input"
+                        />
+                        <button class="btn btn-subscribe">订阅</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="container">
+                    <p>
+                        © 2024 编程学院 版权所有 | 京ICP备XXXXXXXX号-1 |
+                        京公网安备XXXXXXXXXXXXXX号
+                    </p>
+                </div>
+            </div>
+        </footer>
+
+        <script src="app.js"></script>
+    </body>
+</html>
