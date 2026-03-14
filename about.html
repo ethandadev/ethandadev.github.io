@@ -12,15 +12,35 @@
             <div class="container nav-container">
                 <a href="index.html" class="logo">💻 编程学院</a>
                 <ul class="nav-links">
-                    <li><a href="index.html" class="nav-link">首页</a></li>
                     <li>
-                        <a href="courses.html" class="nav-link">课程中心</a>
+                        <a
+                            href="index.html"
+                            class="nav-link"
+                            data-i18n="nav.home"
+                            >首页</a
+                        >
                     </li>
                     <li>
-                        <a href="dashboard.html" class="nav-link">我的课程</a>
+                        <a
+                            href="courses.html"
+                            class="nav-link"
+                            data-i18n="nav.courses"
+                            >课程中心</a
+                        >
                     </li>
                     <li>
-                        <a href="about.html" class="nav-link active"
+                        <a
+                            href="dashboard.html"
+                            class="nav-link"
+                            data-i18n="nav.dashboard"
+                            >我的课程</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="about.html"
+                            class="nav-link active"
+                            data-i18n="nav.about"
                             >关于我们</a
                         >
                     </li>
@@ -36,21 +56,23 @@
         <!-- 页面头部 -->
         <section class="page-header">
             <div class="container">
-                <h1>关于我们</h1>
-                <p>了解编程学院的故事、使命与愿景</p>
+                <h1 data-i18n="about.title">关于我们</h1>
+                <p data-i18n="about.subtitle">了解编程学院的故事、使命与愿景</p>
             </div>
         </section>
 
         <!-- 我们的故事 -->
         <section class="about-section">
             <div class="container">
-                <h2 class="section-title">我们的故事</h2>
+                <h2 class="section-title" data-i18n="about.story.title">
+                    我们的故事
+                </h2>
                 <div class="about-grid">
                     <div class="about-text">
-                        <p>
+                        <p data-i18n="about.story.p1">
                             编程学院成立于2018年，由一群热爱编程教育的工程师创立。我们相信，编程不仅是一项技能，更是一种思维方式。通过高质量的课程内容和创新的教学方法，我们已经帮助超过50,000名学员实现了他们的技术梦想。
                         </p>
-                        <p>
+                        <p data-i18n="about.story.p2">
                             我们的课程涵盖从入门到高级的各个层次，包括Python、Java、前端开发、人工智能等热门方向。每一门课程都经过精心设计，结合理论讲解与实战项目，确保学员能够学以致用。
                         </p>
                     </div>
@@ -58,22 +80,38 @@
                         <div class="stat-item">
                             <span class="stat-emoji">🎓</span>
                             <span class="stat-number">50,000+</span>
-                            <span class="stat-label">学员人数</span>
+                            <span
+                                class="stat-label"
+                                data-i18n="about.stats.students"
+                                >学员人数</span
+                            >
                         </div>
                         <div class="stat-item">
                             <span class="stat-emoji">📚</span>
                             <span class="stat-number">200+</span>
-                            <span class="stat-label">精品课程</span>
+                            <span
+                                class="stat-label"
+                                data-i18n="about.stats.courses"
+                                >精品课程</span
+                            >
                         </div>
                         <div class="stat-item">
                             <span class="stat-emoji">⭐</span>
                             <span class="stat-number">98%</span>
-                            <span class="stat-label">好评率</span>
+                            <span
+                                class="stat-label"
+                                data-i18n="about.stats.rating"
+                                >好评率</span
+                            >
                         </div>
                         <div class="stat-item">
                             <span class="stat-emoji">🏆</span>
                             <span class="stat-number">6年</span>
-                            <span class="stat-label">教学经验</span>
+                            <span
+                                class="stat-label"
+                                data-i18n="about.stats.years"
+                                >教学经验</span
+                            >
                         </div>
                     </div>
                 </div>
@@ -83,22 +121,30 @@
         <!-- 使命、愿景、价值观 -->
         <section class="about-section">
             <div class="container">
-                <h2 class="section-title">我们的使命</h2>
+                <h2 class="section-title" data-i18n="about.mission.title">
+                    我们的使命
+                </h2>
                 <div class="mission-grid">
                     <div class="mission-card">
                         <span class="mission-icon">🎯</span>
-                        <h3>使命</h3>
-                        <p>让每个人都能通过编程实现自己的创意和梦想</p>
+                        <h3 data-i18n="about.mission.mission">使命</h3>
+                        <p data-i18n="about.mission.mission.desc">
+                            让每个人都能通过编程实现自己的创意和梦想
+                        </p>
                     </div>
                     <div class="mission-card">
                         <span class="mission-icon">👁️</span>
-                        <h3>愿景</h3>
-                        <p>成为全球最受信赖的在线编程教育平台</p>
+                        <h3 data-i18n="about.mission.vision">愿景</h3>
+                        <p data-i18n="about.mission.vision.desc">
+                            成为全球最受信赖的在线编程教育平台
+                        </p>
                     </div>
                     <div class="mission-card">
                         <span class="mission-icon">💎</span>
-                        <h3>价值观</h3>
-                        <p>专业、创新、包容、共赢</p>
+                        <h3 data-i18n="about.mission.values">价值观</h3>
+                        <p data-i18n="about.mission.values.desc">
+                            专业、创新、包容、共赢
+                        </p>
                     </div>
                 </div>
             </div>
@@ -107,15 +153,21 @@
         <!-- 核心团队 -->
         <section class="about-section">
             <div class="container">
-                <h2 class="section-title">核心团队</h2>
+                <h2 class="section-title" data-i18n="about.team.title">
+                    核心团队
+                </h2>
                 <div class="team-grid">
                     <div class="team-card">
                         <div class="team-avatar">
                             <span>👨‍💻</span>
                         </div>
-                        <h3 class="team-name">张明</h3>
-                        <p class="team-title">创始人兼CEO</p>
-                        <p class="team-bio">
+                        <h3 class="team-name" data-i18n="about.team.zhang.name">
+                            张明
+                        </h3>
+                        <p class="team-title" data-i18n="about.team.zhang.role">
+                            创始人兼CEO
+                        </p>
+                        <p class="team-bio" data-i18n="about.team.zhang.bio">
                             前阿里巴巴高级工程师，10年编程教育经验
                         </p>
                     </div>
@@ -123,9 +175,13 @@
                         <div class="team-avatar">
                             <span>👩‍💻</span>
                         </div>
-                        <h3 class="team-name">李华</h3>
-                        <p class="team-title">技术总监</p>
-                        <p class="team-bio">
+                        <h3 class="team-name" data-i18n="about.team.li.name">
+                            李华
+                        </h3>
+                        <p class="team-title" data-i18n="about.team.li.role">
+                            技术总监
+                        </p>
+                        <p class="team-bio" data-i18n="about.team.li.bio">
                             前腾讯技术专家，精通Java和分布式系统
                         </p>
                     </div>
@@ -133,9 +189,13 @@
                         <div class="team-avatar">
                             <span>👨‍🎓</span>
                         </div>
-                        <h3 class="team-name">王芳</h3>
-                        <p class="team-title">教学总监</p>
-                        <p class="team-bio">
+                        <h3 class="team-name" data-i18n="about.team.wang.name">
+                            王芳
+                        </h3>
+                        <p class="team-title" data-i18n="about.team.wang.role">
+                            教学总监
+                        </p>
+                        <p class="team-bio" data-i18n="about.team.wang.bio">
                             北京大学计算机博士，专注前端技术研究
                         </p>
                     </div>
@@ -143,9 +203,15 @@
                         <div class="team-avatar">
                             <span>👩‍🎓</span>
                         </div>
-                        <h3 class="team-name">陈伟</h3>
-                        <p class="team-title">课程设计师</p>
-                        <p class="team-bio">前百度算法工程师，ACM金牌获得者</p>
+                        <h3 class="team-name" data-i18n="about.team.chen.name">
+                            陈伟
+                        </h3>
+                        <p class="team-title" data-i18n="about.team.chen.role">
+                            课程设计师
+                        </p>
+                        <p class="team-bio" data-i18n="about.team.chen.bio">
+                            前百度算法工程师，ACM金牌获得者
+                        </p>
                     </div>
                 </div>
             </div>
@@ -154,53 +220,80 @@
         <!-- 联系我们 -->
         <section class="contact-section">
             <div class="container">
-                <h2 class="section-title">联系我们</h2>
+                <h2 class="section-title" data-i18n="about.contact.title">
+                    联系我们
+                </h2>
                 <div class="contact-info-grid">
                     <div class="contact-info-card">
                         <span class="contact-icon">📧</span>
-                        <p>contact@codingacademy.cn</p>
+                        <p data-i18n="about.contact.email">
+                            contact@codingacademy.cn
+                        </p>
                     </div>
                     <div class="contact-info-card">
                         <span class="contact-icon">📞</span>
-                        <p>400-888-9999</p>
+                        <p data-i18n="about.contact.phone">400-888-9999</p>
                     </div>
                     <div class="contact-info-card">
                         <span class="contact-icon">📍</span>
-                        <p>北京市海淀区中关村科技园</p>
+                        <p data-i18n="about.contact.address">
+                            北京市海淀区中关村科技园
+                        </p>
                     </div>
                 </div>
                 <form class="contact-form">
                     <div class="form-group">
-                        <label for="contact-name">姓名</label>
+                        <label
+                            for="contact-name"
+                            data-i18n="about.contact.form.name"
+                            >姓名</label
+                        >
                         <input
                             type="text"
                             id="contact-name"
                             name="name"
                             placeholder="请输入您的姓名"
+                            data-i18n-placeholder="about.contact.form.name.placeholder"
                             required
                         />
                     </div>
                     <div class="form-group">
-                        <label for="contact-email">邮箱</label>
+                        <label
+                            for="contact-email"
+                            data-i18n="about.contact.form.email"
+                            >邮箱</label
+                        >
                         <input
                             type="email"
                             id="contact-email"
                             name="email"
                             placeholder="请输入您的邮箱"
+                            data-i18n-placeholder="about.contact.form.email.placeholder"
                             required
                         />
                     </div>
                     <div class="form-group">
-                        <label for="contact-message">留言</label>
+                        <label
+                            for="contact-message"
+                            data-i18n="about.contact.form.message"
+                            >留言</label
+                        >
                         <textarea
                             id="contact-message"
                             name="message"
                             rows="5"
                             placeholder="请输入您的留言内容"
+                            data-i18n-placeholder="about.contact.form.message.placeholder"
                             required
                         ></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary">提交</button>
+                    <button
+                        type="submit"
+                        class="btn btn-primary"
+                        data-i18n="about.contact.form.submit"
+                    >
+                        提交
+                    </button>
                 </form>
             </div>
         </section>
@@ -210,54 +303,89 @@
             <div class="container footer-grid">
                 <div class="footer-col">
                     <h4 class="footer-heading">💻 编程学院</h4>
-                    <p class="footer-about">
+                    <p class="footer-about" data-i18n="footer.about">
                         编程学院是国内领先的在线编程教育平台，致力于为学员提供高质量、体系化的编程课程，帮助每一位学习者实现技术梦想。
                     </p>
                 </div>
 
                 <div class="footer-col">
-                    <h4 class="footer-heading">快速链接</h4>
+                    <h4 class="footer-heading" data-i18n="footer.quicklinks">
+                        快速链接
+                    </h4>
                     <ul class="footer-links">
-                        <li><a href="index.html">首页</a></li>
-                        <li><a href="courses.html">课程中心</a></li>
-                        <li><a href="#">学习路径</a></li>
-                        <li><a href="#">师资团队</a></li>
-                        <li><a href="#">常见问题</a></li>
+                        <li>
+                            <a href="index.html" data-i18n="footer.home"
+                                >首页</a
+                            >
+                        </li>
+                        <li>
+                            <a href="courses.html" data-i18n="footer.courses"
+                                >课程中心</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#" data-i18n="footer.path">学习路径</a>
+                        </li>
+                        <li>
+                            <a href="#" data-i18n="footer.team">师资团队</a>
+                        </li>
+                        <li><a href="#" data-i18n="footer.faq">常见问题</a></li>
                     </ul>
                 </div>
 
                 <div class="footer-col">
-                    <h4 class="footer-heading">联系我们</h4>
+                    <h4 class="footer-heading" data-i18n="footer.contact">
+                        联系我们
+                    </h4>
                     <ul class="footer-contact">
-                        <li>📧 邮箱：contact@codingacademy.cn</li>
-                        <li>📞 电话：400-888-9999</li>
-                        <li>📍 地址：北京市海淀区中关村科技园</li>
-                        <li>🕐 工作时间：周一至周五 9:00 - 18:00</li>
+                        <li data-i18n="footer.email">
+                            📧 邮箱：contact@codingacademy.cn
+                        </li>
+                        <li data-i18n="footer.phone">📞 电话：400-888-9999</li>
+                        <li data-i18n="footer.address">
+                            📍 地址：北京市海淀区中关村科技园
+                        </li>
+                        <li data-i18n="footer.hours">
+                            🕐 工作时间：周一至周五 9:00 - 18:00
+                        </li>
                     </ul>
                 </div>
 
                 <div class="footer-col">
-                    <h4 class="footer-heading">关注我们</h4>
+                    <h4 class="footer-heading" data-i18n="footer.follow">
+                        关注我们
+                    </h4>
                     <div class="social-links">
                         <a href="#" class="social-link" title="微信">💬</a>
                         <a href="#" class="social-link" title="微博">📢</a>
                         <a href="#" class="social-link" title="抖音">🎵</a>
                         <a href="#" class="social-link" title="哔哩哔哩">📺</a>
                     </div>
-                    <p class="footer-newsletter-label">订阅我们的最新动态</p>
+                    <p
+                        class="footer-newsletter-label"
+                        data-i18n="footer.subscribe.label"
+                    >
+                        订阅我们的最新动态
+                    </p>
                     <div class="newsletter-form">
                         <input
                             type="email"
                             placeholder="请输入您的邮箱"
                             class="newsletter-input"
+                            data-i18n-placeholder="footer.subscribe.placeholder"
                         />
-                        <button class="btn btn-subscribe">订阅</button>
+                        <button
+                            class="btn btn-subscribe"
+                            data-i18n="footer.subscribe.btn"
+                        >
+                            订阅
+                        </button>
                     </div>
                 </div>
             </div>
             <div class="footer-bottom">
                 <div class="container">
-                    <p>
+                    <p data-i18n="footer.copyright">
                         © 2024 编程学院 版权所有 | 京ICP备XXXXXXXX号-1 |
                         京公网安备XXXXXXXXXXXXXX号
                     </p>
@@ -265,6 +393,7 @@
             </div>
         </footer>
 
+        <script src="settings.js"></script>
         <script src="app.js"></script>
     </body>
 </html>
